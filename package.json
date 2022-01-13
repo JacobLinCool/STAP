@@ -1,17 +1,17 @@
 {
-  "name": "stap",
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,md,yml,css,html}' '!dist'"
-  },
-  "devDependencies": {
-    "prettier": "^2.5.1",
-    "vite": "^2.7.2"
-  },
-  "dependencies": {
-    "textual-data-analysis": "^0.1.7"
-  }
+    "name": "stap",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,md,yml,css,html}' '!dist'"
+    },
+    "devDependencies": {
+        "prettier": "^2.5.1",
+        "vite": "^2.7.2"
+    },
+    "dependencies": {
+        "textual-data-analysis": "^0.1.7"
+    }
 }
