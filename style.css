@@ -2,6 +2,10 @@
     position: relative;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 html,
 body {
     width: 100%;
