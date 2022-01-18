@@ -1,18 +1,18 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@types/node': ^17.0.9
-  '@vitejs/plugin-vue': ^2.0.1
+  '@types/node': 17.0.9
+  '@vitejs/plugin-vue': 2.0.1
   autoprefixer: 10.4.2
   dynamic.md: 0.1.1
   postcss: 8.4.5
   prettier: 2.5.1
   tailwindcss: 3.0.15
   textual-data-analysis: 0.1.8
-  typescript: ^4.5.4
+  typescript: 4.5.4
   vite: 2.7.12
-  vue: ^3.2.27
-  vue-tsc: ^0.30.5
+  vue: 3.2.27
+  vue-tsc: 0.30.5
 
 dependencies:
   textual-data-analysis: 0.1.8
