@@ -1,0 +1,155 @@
+/* #region general */
+* {
+    @apply relative outline-none;
+}
+
+::-webkit-scrollbar {
+    @apply hidden;
+}
+
+html,
+body {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply w-full h-full m-0 p-0 bg-slate-400;
+}
+
+#app {
+    @apply bg-slate-100 min-h-full min-w-full overflow-hidden shadow-sm;
+}
+/* #endregion */
+
+/* #region file area */
+#file {
+    @apply w-full lg:w-1/2 h-screen float-left;
+}
+
+#file-browser {
+    @apply w-full h-1/4 p-1.5 bg-green-200;
+}
+
+.file-item {
+    @apply w-full p-1.5 my-2 rounded bg-opacity-70 bg-white flex flex-row justify-between items-center neumorphism-raised transition-all duration-200;
+}
+
+.file-item:hover {
+    @apply neumorphism-sunken;
+}
+
+.file-item.viewing {
+    @apply neumorphism-sunken-2 font-bold;
+}
+
+.add-file {
+    @apply cursor-pointer justify-center;
+}
+
+.file-item-name {
+    @apply flex-1;
+}
+
+.file-item-buttons {
+    @apply flex;
+}
+
+.file-item-buttons button {
+    @apply p-0.5 mx-1;
+}
+
+#file-editor {
+    @apply w-full h-3/4 p-1.5 bg-lime-100;
+}
+
+#file-editor textarea {
+    @apply p-1.5 w-full h-full box-border border-0 rounded resize-none bg-opacity-60 bg-white neumorphism-sunken outline-none transition-all duration-200;
+}
+
+#file-editor textarea:focus {
+    @apply neumorphism-sunken-3;
+}
+/* #endregion */
+
+/* #region analysis area */
+#analysis {
+    @apply w-full lg:w-1/2 h-screen float-left;
+}
+
+#analysis-configs {
+    @apply w-full h-1/4 p-1.5 bg-blue-100 overflow-y-auto;
+}
+
+#analysis-configs select {
+    @apply cursor-pointer;
+}
+
+#analysis-configs input,
+#analysis-configs select,
+#analysis-configs textarea {
+    @apply neumorphism-raised-2 transition-all duration-200 outline-none;
+}
+
+#analysis-configs input:hover,
+#analysis-configs select:hover,
+#analysis-configs textarea:hover {
+    @apply neumorphism-raised duration-100;
+}
+
+#analysis-configs input:focus,
+#analysis-configs select:focus,
+#analysis-configs textarea:focus {
+    @apply neumorphism-sunken-2;
+}
+
+#analyze-btn {
+    @apply font-bold h-10 py-1 px-3 rounded bg-opacity-40 bg-white neumorphism-raised-2 transition-all duration-200;
+}
+
+#analyze-btn:hover {
+    @apply neumorphism-raised duration-100;
+}
+
+#analyze-btn:active {
+    @apply neumorphism-sunken-2;
+}
+
+#analysis-result {
+    @apply w-full h-3/4 p-1.5 bg-indigo-100;
+}
+
+#analysis-result textarea {
+    @apply p-1.5 w-full h-full box-border border-0 rounded resize-none bg-opacity-60 bg-white neumorphism-sunken outline-none transition-all duration-200;
+}
+
+#analysis-result textarea:focus {
+    @apply neumorphism-sunken-3;
+}
+/* #endregion */
+
+/* #region neumorphism */
+.neumorphism-sunken {
+    box-shadow: inset 1px 0.75px 2px 0px #00000088, inset -1px -0.75px 2px 0px #ffffff88;
+}
+
+.neumorphism-sunken-2 {
+    box-shadow: inset 2px 1.5px 3px 0px #00000088, inset -2px -1.5px 3px 0px #ffffff88;
+}
+
+.neumorphism-sunken-3 {
+    box-shadow: inset 4px 3px 4px 0px #00000088, inset -4px -3px 4px 0px #ffffff88;
+}
+
+.neumorphism-raised {
+    box-shadow: inset 0 0 0 transparent, inset 0 0 0 transparent, -1px -0.75px 2px 0px #ffffff88,
+        1px 0.75px 2px 0px #00000088;
+}
+
+.neumorphism-raised-2 {
+    box-shadow: inset 0 0 0 transparent, inset 0 0 0 transparent, -2px -1.5px 3px 0px #ffffff88,
+        2px 1.5px 3px 0px #00000088;
+}
+
+.neumorphism-raised-3 {
+    box-shadow: inset 0 0 0 transparent, inset 0 0 0 transparent, -4px -3px 4px 0px #ffffff88, 4px 3px 4px 0px #00000088;
+}
+/* #endregion */
